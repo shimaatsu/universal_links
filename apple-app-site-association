@@ -1,0 +1,13 @@
+{
+    "applinks": {
+        "App": [],
+        "details": [
+            {
+                "appID": "3N37PKZL3L.com.shimaatsu", ←TeamIDとBundleIdentifierを組み合わせたもの
+                "paths": [
+                    "/index.html" ←アプリに遷移させたいパス
+                ]
+            }
+        ]
+    }
+}

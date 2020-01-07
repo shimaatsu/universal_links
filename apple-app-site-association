@@ -3,9 +3,9 @@
         "App": [],
         "details": [
             {
-                "appID": "3N37PKZL3L.com.shimaatsu", ←TeamIDとBundleIdentifierを組み合わせたもの
+                "appID": "3N37PKZL3L.com.shimaatsu",
                 "paths": [
-                    "/index.html" ←アプリに遷移させたいパス
+                    "./index.html"
                 ]
             }
         ]

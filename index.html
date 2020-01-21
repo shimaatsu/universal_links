@@ -1,9 +1,36 @@
 <!DOCTYPE HTML>
 <html>
+
 <head>
-    <meta charset="utf-8">
+  <meta charset="utf-8">
+  <script>
+    // URLのパラメータを取得
+    var urlParam = location.search.substring(1);
+
+    // URLにパラメータが存在する場合
+    if (urlParam) {
+      // 「&」が含まれている場合は「&」で分割
+      var param = urlParam.split('&');
+
+      // パラメータを格納する用の配列を用意
+      var paramArray = [];
+
+      // 用意した配列にパラメータを格納
+      for (i = 0; i < param.length; i++) {
+        var paramItem = param[i].split('=');
+        paramArray[paramItem[0]] = paramItem[1];
+      }
+
+      // パラメータidがosakaかどうかを判断する
+      if (paramArray.id == 'urlscheme') {
+        location.href="shimaatsu://"
+      }
+    }
+  </script>
 </head>
+
 <body>
-univarsal_links
+  univarsal_links
 </body>
+
 </html>
